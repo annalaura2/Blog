@@ -1,0 +1,59 @@
+@keyframes scale-up-hor-right {
+    0% {
+        -webkit-transform: scaleX(0.4);
+        transform: scaleX(0.4);
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+    }
+    100% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+    }
+}
+
+.container_menu-bar-responsive {
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 0 0 1em;
+    animation: scale-up-hor-right 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+} 
+
+.menu-bar-responsive_close {
+    padding: 1em;
+}
+
+.menu-bar-responsive_close:first-child {
+    text-align: right;
+}
+
+.menu-bar-responsive_links ul {
+    list-style: none;
+}
+
+.menu-bar-responsive_links ul > li {
+    display: flex;
+    font-size: 1.5em;
+    margin: 1em;
+    padding: 1em;
+}
+
+.menu-bar-responsive_links ul > li:hover {
+    border-left: 2px solid #252424;
+}
+
+.menu-bar-responsive_links ul > li > a {
+    padding-left: 0.5em;
+    text-decoration: none;
+    color: #252424;
+}
+
+.menu-bar-responsive_links ul > li > .litleBallDio {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #252424;
+}
