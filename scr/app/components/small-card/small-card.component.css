@@ -1,0 +1,36 @@
+.container_small-card{
+    display: flex;
+    gap: 1em;
+    max-width: 612px;
+    padding: 0 1em;
+    cursor: pointer;
+}
+
+.small-card_content-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.small-card_content-text span {
+    font-size: 0.8em;
+    opacity: 0.3;
+}
+
+.small-card_content-text h4 {
+    margin: 0.8em 0;
+    opacity: 0.8;
+}
+
+.small-card_img img {
+    width: 100%;
+    max-height: 151px;
+}
+
+@media screen and (max-width: 767px){
+    .small-card_img{
+        order: 2;
+    }
+    .small-card_content-text{
+        order: 1;
+    }
+}
